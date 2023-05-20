@@ -15,13 +15,12 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "deploy":"gh-pages -d build",
-    "predeploy":"npm run build"
+    "deploy": "gh-pages -d build",
+    "predeploy": "npm run build"
   },
   "eslintConfig": {
     "extends": [
@@ -41,5 +40,5 @@
       "last 1 safari version"
     ]
   },
-  "homepage": "https://seunghyun0522.github.io/movie"
+  "homepage": "https://seunghyun0522.github.io/movie/"
 }
