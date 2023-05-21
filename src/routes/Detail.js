@@ -18,7 +18,7 @@ function Detail() {
   }, []);
 
   return (
-    <div>
+    <div className="home">
       {info?.map((info) => (
         <Info
           key={info.id}

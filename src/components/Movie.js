@@ -7,7 +7,7 @@ function Movie({ id, thumbnail, name, description }) {
       <img src={thumbnail} alt={name} className={styles.movie__img} />
       <div>
         <h2 className={styles.movie__name}>
-          <Link to={`/movie/${id}`}>{name}</Link>
+          <Link to={`/movie/${id}`}> {name}</Link>
         </h2>
       </div>
       <p className={styles.description}>
