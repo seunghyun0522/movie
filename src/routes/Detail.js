@@ -4,9 +4,10 @@ function Detail() {
   const { id } = useParams();
   const getMovie = async () => {
     const json = await (
-      await fetch(`https://yts.mx/api/v2/movie_details.json?movie_id=${id}`)
+      await fetch(
+        `https://marvel-proxy.nomadcoders.workers.dev/v1/public/characters/:id=${id}`
+      )
     ).json();
-    console.log(json);
   };
   useEffect(() => {
     getMovie();
