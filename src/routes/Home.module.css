@@ -1,7 +1,7 @@
 .container {
   height: 100%;
   display: flex;
-  background: url("/src/img/studio.jpeg") 0 center / 500px repeat;
+  background: url("/src/img/back.jpeg") 0 center / 500px repeat;
   animation: movebg 8s linear infinite;
   justify-content: center;
 }
@@ -27,7 +27,7 @@
 .home {
   height: 100%;
   width: 100%;
-  background: url("/src/img/studio.jpeg") 0 center / 500px repeat;
+  background: url("/src/img/back.jpeg") 0 center / 500px repeat;
   animation: movebg 8s linear infinite;
 }
 

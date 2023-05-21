@@ -1,5 +1,6 @@
 .movie {
-  background-color: rgb(223, 213, 206);
+  background-color: rgb(240, 240, 240);
+  opacity: 0.9;
   margin-bottom: 50px;
   font-weight: 300;
   padding: 10px;
@@ -20,14 +21,13 @@
 
 .info__main {
   display: flex;
-
   justify-content: center;
   align-items: center;
 }
 .info__img {
   width: 250px;
   height: 250px;
-  margin-left: 200px;
+  margin-left: 50px;
   margin: 30px;
 }
 
@@ -42,13 +42,13 @@
 }
 
 .movie:hover {
-  background-color: rgba(168, 25, 23, 0.5);
+  background-color: rgba(14, 11, 31, 0.5);
 }
 .movie:hover img {
   transition: 0.5s;
   border-radius: 100%;
   transform: scale(1.2) rotate(-3deg);
-  opacity: 0.5;
+  opacity: 0.9;
 }
 .movie:hover a {
   color: white;
@@ -70,7 +70,10 @@
 
   text-decoration: none;
 }
-
+.info__description {
+  color: white;
+  font-size: 30px;
+}
 .description {
   width: 30%;
   font-size: 25px;
