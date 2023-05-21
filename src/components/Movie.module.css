@@ -60,6 +60,7 @@
   line-height: 1.5;
   color: white;
   visibility: hidden;
+  font-weight: bolder;
 }
 
 .movie__name {
