@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import Info from "../components/Info";
+import styles from "./Home.module.css";
 function Detail() {
   const { id } = useParams();
   const [info, setInfo] = useState();
@@ -18,12 +19,14 @@ function Detail() {
   }, []);
 
   return (
-    <div className="home">
+    <div className={styles.home}>
       {info?.map((info) => (
         <Info
           key={info.id}
-          name={info.name}
+          id={info.id}
           thumbnail={`${info.thumbnail.path}.${info.thumbnail.extension}`}
+          name={info.name}
+          description={info.description}
         />
       ))}
     </div>

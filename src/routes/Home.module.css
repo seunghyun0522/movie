@@ -24,12 +24,18 @@
   }
 }
 
+.home {
+  height: 100%;
+  width: 100%;
+  background: url("/src/img/studio.jpeg") 0 center / 500px repeat;
+  animation: movebg 8s linear infinite;
+}
+
 .movies {
   display: grid;
   grid-template-columns: repeat(2, minmax(400px, 1fr));
   grid-gap: 100px;
   padding: 50px;
-
   width: 80%;
   padding-top: 70px;
 }
