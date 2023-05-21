@@ -9,12 +9,17 @@ function Movie({ id, thumbnail, name, description }) {
         <h2 className={styles.movie__name}>
           <Link to={`/movie/${id}`}>{name}</Link>
         </h2>
-        <p>
-          {description.length > 235
-            ? `${description.slice(0, 235)}...`
-            : description}
-        </p>
       </div>
+      <p className={styles.description}>
+        {description.length < 10 ? (
+          <p>
+            There is no data on the description. But it's a really fun movie, so
+            make sure to watch it!
+          </p>
+        ) : (
+          `${description.slice(0, 300)}...`
+        )}
+      </p>
     </div>
   );
 }

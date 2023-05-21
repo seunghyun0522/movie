@@ -1,6 +1,8 @@
 .container {
   height: 100%;
   display: flex;
+  background: url("/src/img/studio.jpeg") 0 center / 500px repeat;
+  animation: movebg 8s linear infinite;
   justify-content: center;
 }
 
@@ -13,11 +15,21 @@
   font-weight: 300;
 }
 
+@keyframes movebg {
+  0% {
+    background-position: 0 center;
+  }
+  100% {
+    background-position: -500px center;
+  }
+}
+
 .movies {
   display: grid;
   grid-template-columns: repeat(2, minmax(400px, 1fr));
   grid-gap: 100px;
   padding: 50px;
+
   width: 80%;
   padding-top: 70px;
 }

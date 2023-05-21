@@ -1,43 +1,70 @@
 .movie {
   background-color: white;
-  margin-bottom: 70px;
+  margin-bottom: 40px;
   font-weight: 300;
   padding: 20px;
   border-radius: 5px;
   color: #adaeb9;
-  display: grid;
   grid-template-columns: minmax(150px, 1fr) 2fr;
   grid-gap: 20px;
   text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   color: inherit;
+  transition: 0.5s;
   box-shadow: 0 13px 27px -5px rgba(50, 50, 93, 0.25),
     0 8px 16px -8px rgba(0, 0, 0, 0.3), 0 -6px 16px -6px rgba(0, 0, 0, 0.025);
 }
 
+.movie:hover .description {
+  visibility: visible;
+}
+
+.movie:hover {
+  background-color: rgb(27, 27, 27, 0.5);
+}
+.movie:hover img {
+  transition: 0.5s;
+  border-radius: 100%;
+  transform: scale(1.2) rotate(-3deg);
+  opacity: 0.5;
+}
+.movie:hover a {
+  color: white;
+  font-size: 30px;
+}
+
 .movie__img {
-  position: relative;
-  top: -50px;
-  max-width: 150px;
-  width: 100%;
-  margin-right: 30px;
-  box-shadow: 0 30px 60px -12px rgba(50, 50, 93, 0.25),
-    0 18px 36px -18px rgba(0, 0, 0, 0.3), 0 -12px 36px -8px rgba(0, 0, 0, 0.025);
+  border-radius: 10px;
+  width: 65%;
+  margin: 20px;
+  height: 65%;
+  box-shadow: 5px 5px 20px black;
 }
 
-.movie__title,
-.movie__year {
-  margin: 0;
-  font-weight: 300;
-  text-decoration: none;
-}
-
-.movie__title a {
+.movie__name a {
   margin-bottom: 5px;
-  font-size: 24px;
+  font-size: 25px;
   color: #2c2c2c;
+
   text-decoration: none;
 }
 
+.description {
+  width: 30%;
+  font-size: 25px;
+  text-align: center;
+  position: absolute;
+  line-height: 1.5;
+  color: white;
+  visibility: hidden;
+}
+
+.movie__name {
+  text-align: center;
+}
 .movie__genres {
   list-style: none;
   padding: 0;
@@ -45,10 +72,4 @@
   display: flex;
   flex-wrap: wrap;
   margin: 5px 0px;
-}
-
-.movie__genres li,
-.movie__year {
-  margin-right: 10px;
-  font-size: 14px;
 }
