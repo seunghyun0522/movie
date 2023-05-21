@@ -3,7 +3,6 @@ import proTypes from "prop-types";
 function Info({ id, name, thumbnail }) {
   return (
     <div>
-      <h3>{id}</h3>
       <h1>{name}</h1>
       <img src={thumbnail} />
     </div>
