@@ -1,12 +1,12 @@
 .movie {
-  background-color: white;
-  margin-bottom: 40px;
+  background-color: rgb(223, 213, 206);
+  margin-bottom: 50px;
   font-weight: 300;
-  padding: 20px;
+  padding: 10px;
   border-radius: 5px;
   color: #adaeb9;
   grid-template-columns: minmax(150px, 1fr) 2fr;
-  grid-gap: 20px;
+  grid-gap: 0px;
   text-decoration: none;
   display: flex;
   flex-direction: column;
@@ -18,12 +18,31 @@
     0 8px 16px -8px rgba(0, 0, 0, 0.3), 0 -6px 16px -6px rgba(0, 0, 0, 0.025);
 }
 
+.info__main {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+}
+.info__img {
+  width: 250px;
+  height: 250px;
+  margin-left: 200px;
+  margin: 30px;
+}
+
+.info__name {
+  font-size: 45px;
+  margin-right: 300px;
+  color: white;
+  margin-bottom: 50px;
+}
 .movie:hover .description {
   visibility: visible;
 }
 
 .movie:hover {
-  background-color: rgb(27, 27, 27, 0.5);
+  background-color: rgba(168, 25, 23, 0.5);
 }
 .movie:hover img {
   transition: 0.5s;
@@ -40,7 +59,7 @@
   border-radius: 10px;
   width: 65%;
   margin: 20px;
-  height: 65%;
+  height: 55%;
   box-shadow: 5px 5px 20px black;
 }
 
