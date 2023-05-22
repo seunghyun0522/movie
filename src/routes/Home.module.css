@@ -1,7 +1,8 @@
 .container {
   height: 100%;
   display: flex;
-  background: url("/src/img/back.jpeg") 0 center / 500px repeat;
+  background: url("https://mblogthumb-phinf.pstatic.net/MjAyMzA1MDRfMjc5/MDAxNjgzMTI2NzQ4MzU4.nSiy2eGfXtBbuZYinYbM2nbU6Xy95hhZx7buXWk6p_Eg.YkgM4M-Dv4N7IpcXPb8ljPuwYRtkgD0hrKLAlDNAfewg.JPEG.love__me____/IMG_8546.JPG?type=w800")
+    0 center / 500px repeat;
   animation: movebg 8s linear infinite;
   justify-content: center;
 }
@@ -27,7 +28,9 @@
 .home {
   height: 100%;
   width: 100%;
-  background: url("/src/img/back.jpeg") 0 center / 500px repeat;
+  font-family: "Righteous", serif;
+  background: url("https://i.pinimg.com/564x/52/79/b1/5279b12c2cd84702ce393423da54db4e.jpg")
+    0 center / 250px repeat;
   animation: movebg 8s linear infinite;
 }
 

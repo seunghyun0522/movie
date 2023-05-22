@@ -8,6 +8,7 @@
   color: #adaeb9;
   grid-template-columns: minmax(150px, 1fr) 2fr;
   grid-gap: 0px;
+  font-family: "Righteous", serif;
   text-decoration: none;
   display: flex;
   flex-direction: column;
@@ -21,78 +22,113 @@
 
 .info__main {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
 .info__img {
-  width: 250px;
-  height: 250px;
-  margin-left: 50px;
+  width: 300px;
+  height: 300px;
   margin: 30px;
+  animation: heartBeat 1s ease-in-out infinite;
+}
+
+@keyframes heartBeat {
+  0% {
+    transform: none;
+  }
+  50% {
+    transform: scale(1.2);
+    border-radius: 50px;
+  }
+  100% {
+    transform: none;
+  }
 }
 
 .info__name {
-  font-size: 45px;
-  margin-right: 300px;
+  display: inline-block;
   color: white;
-  margin-bottom: 50px;
+  font-family: "Righteous", serif;
+  font-size: 12em;
+  text-shadow: 0.03em 0.03em 0 hsla(230, 40%, 50%, 1);
+}
+
+@keyframes shad-anim {
+  0% {
+    background-position: 0 0;
+  }
+  0% {
+    background-position: 100% -100%;
+  }
 }
 .movie:hover .description {
   visibility: visible;
 }
 
 .movie:hover {
-  background-color: rgba(14, 11, 31, 0.5);
+  background-color: rgba(14, 11, 31, 0.9);
 }
 .movie:hover img {
   transition: 0.5s;
-  border-radius: 100%;
-  transform: scale(1.2) rotate(-3deg);
-  opacity: 0.9;
+  border-radius: 10%;
+  transform: scale(1.5) rotate(-3deg);
+  opacity: 0.5;
 }
-.movie:hover a {
+.movie:hover .movie__name {
   color: white;
+  margin-top: 20px;
   font-size: 30px;
+}
+.movies__back {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
 }
 
 .movie__img {
   border-radius: 10px;
-  width: 65%;
+  width: 250px;
   margin: 20px;
-  height: 55%;
+  height: 250px;
   box-shadow: 5px 5px 20px black;
 }
 
-.movie__name a {
-  margin-bottom: 5px;
-  font-size: 25px;
-  color: #2c2c2c;
-
+.movie__name {
+  margin-bottom: 20px;
+  display: inline-block;
+  color: rgb(20, 19, 19);
+  font-family: "Righteous", serif;
+  font-size: 35px;
+  text-shadow: 0.03em 0.03em 0 hsla(230, 40%, 50%, 1);
   text-decoration: none;
+}
+
+.movie_name a {
+  text-decoration-line: none;
 }
 .info__description {
   color: white;
-  font-size: 30px;
+  text-shadow: 0.03em 0.03em 0 hsla(230, 40%, 50%, 1);
+  font-size: 35px;
+  margin: 30px;
 }
 .description {
+  display: flex;
   width: 30%;
-  font-size: 25px;
+  font-size: 30px;
+  margin: 10px;
   text-align: center;
   position: absolute;
   line-height: 1.5;
-  color: white;
+  color: yellow;
   visibility: hidden;
-  font-weight: bolder;
+  font-weight: bold;
 }
 
 .movie__name {
   text-align: center;
-}
-.movie__genres {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  flex-wrap: wrap;
-  margin: 5px 0px;
 }
