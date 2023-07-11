@@ -6,9 +6,8 @@
 - npx create react-app
 - useEffect, useState
 
-## 🌠 small Porject
-- To DO List 
-- Coin Tracker
+## 🌠 small Project
+
 - Movie app
 
 ## 🌠 final Project :  created Marvel Web using React
