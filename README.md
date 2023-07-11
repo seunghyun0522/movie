@@ -6,11 +6,7 @@
 - npx create react-app
 - useEffect, useState
 
-## 🌠 small Project
-
-- Movie app
-
-## 🌠 final Project :  created Marvel Web using React
+## 🌠 Project :  created Marvel Web using React
 
 ## ✨ Main screen:
 <img width="1089" alt="image" src="https://github.com/seunghyun0522/movie/assets/75532258/08b602da-abf9-4083-b953-f45a1383b4c8">
